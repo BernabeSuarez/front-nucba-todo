@@ -4,7 +4,14 @@ import { motion } from "framer-motion";
 const Todo = ({ todo }) => {
   return (
     <motion.div whileHover={{ scale: 1.05 }} transition="0.5s linear">
-      <Box bg="gray.300" border="1px" minWidth="450px" p={2} borderRadius={12}>
+      <Box
+        bg="gray.300"
+        border="1px"
+        minWidth="450px"
+        p={2}
+        borderRadius={12}
+        key={todo.id}
+      >
         <Flex
           flexDirection="row"
           justifyContent="space-between"

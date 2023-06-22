@@ -12,7 +12,9 @@ const TodoForm = () => {
     <Box
       bg="gray.300"
       border="1px"
-      minWidth="450px"
+      minWidth="600px"
+      boxShadow="xl"
+      rounded="md"
       p={2}
       borderRadius={12}
       marginBottom={3}
@@ -22,11 +24,11 @@ const TodoForm = () => {
         <Flex
           as="main"
           alignItems="center"
-          justifyContent="center"
+          justifyContent="space-between"
           margin="10 auto"
           flexDirection="row"
         >
-          <Input type="text" />
+          <Input type="text" w="80%" placeholder="Escriba aqui" />
           <Button>Enviar</Button>
         </Flex>
       </FormControl>
